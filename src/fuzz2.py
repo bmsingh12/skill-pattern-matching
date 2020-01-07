@@ -6,7 +6,8 @@ from src.KMPSearch import KMPSearch
 
 resume_skills = ["mssql 2005", "mssql 2008", "sql", "ms word", "visual recognition", "excel", "company analysis",
                  "vb web", "apache", "php", "big data", "html", "selenium 3.141.59", "linux", "machine learning", "css",
-                 "team work", "git", "javascript ES5", "mysql", "assembly", "python", "M2001", "amazon ec2"]
+                 "team work", "git", "javascript ES5", "mysql", "assembly", "python", "M2001", "amazon EC2", "dallo",
+                 "biraj"]
 
 # tc = []
 # for title_case in resume_skills:
@@ -15,7 +16,8 @@ alphabet_list = list(ascii_lowercase)
 
 
 def lookupFileSkills():
-    lookupFile = open("/home/infotmt-user/PycharmProjects/PatternMatching/data/skills", "r")
+    # lookupFile = open("/home/infotmt-user/PycharmProjects/KMPMatching/data/skills", "r")
+    lookupFile = open("/home/infotmt-user/PycharmProjects/KMPMatching/data/standard_skills.txt", "r")
     lookup_list = map(lambda l: l.strip('\n'), lookupFile)
     lis = list(lookup_list)
     return lis
@@ -38,7 +40,6 @@ def createDictionary(lis):
 
 # print(dict(dict_a))
 
-
 def refineSkillName(dict_a):
     refined_list_standard_name = set()
     refined_list_lowercase = set()
@@ -56,7 +57,7 @@ def refineSkillName(dict_a):
                         remaining_list = set(resume_skills) - set(refined_list_lowercase)
                         final_list = list(map(lambda x: x.title(), remaining_list)) + list(refined_list_standard_name)
                         # print(refined_list_standard_name)
-
+    print("RSL:\n", refined_list_lowercase)
     return final_list
 
 
