@@ -1,7 +1,8 @@
 import pprint
 
 from fuzzywuzzy import fuzz
-from src.match_to_standard import bcolors
+from src.test.match_to_standard import bcolors
+from difflib import SequenceMatcher
 
 i = 1
 j = 1
@@ -12,15 +13,15 @@ dic = {}
 def lookupFileSkills():
     lookupFile = open("/home/infotmt-user/PycharmProjects/KMPMatching/data/standard_skills.txt", "r")
     lookup_list = map(lambda l: l.strip('\n'), lookupFile)
-    lis = list(lookup_list)
-    return lis
+    lisz = list(lookup_list)
+    return lisz
 
 
 def skill_from_db():
     skills = open("/home/infotmt-user/PycharmProjects/KMPMatching/data/skills_db", "r")
     skills_list = map(lambda l: l.strip("\n"), skills)
-    lis = list(skills_list)
-    return lis
+    lisz = list(skills_list)
+    return lisz
 
 
 sfd = ['java', 'python', 'sql']
@@ -65,12 +66,21 @@ for k, v in filtered_dict.items():
     i += 1
     if len(v) == 1:
         print(bcolors.OKBLUE + "Only Match: " + bcolors.ENDC, v[0])
+    seq_dict = {}
     for skill in v:
         if k == skill.lower():
             print(bcolors.OKGREEN + "Perfect Match: " + bcolors.ENDC, skill)
             # print(j, "\b.", bcolors.OKGREEN + "Perfect Match: " + bcolors.ENDC, skill)
             j += 1
-    print(bcolors.FAIL + "Else Match: " + bcolors.ENDC, v[0])
+        else:
+            seq = SequenceMatcher(None, k.lower(), skill.lower())
+            seq_dict[skill] = seq.ratio()
+            # print("---> ", skill, " : ", seq.ratio())
+
+    None if seq_dict == {} else print(bcolors.FAIL + "Max Value" + bcolors.ENDC,
+                                      max(seq_dict, key=seq_dict.get), " : ", max(seq_dict.values()))
+
+    # print(bcolors.FAIL + "Else Match: " + bcolors.ENDC, v[0])
+    pprint.pprint(seq_dict)
 
 print("-" * 80)
-

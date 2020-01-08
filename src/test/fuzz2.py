@@ -2,7 +2,7 @@ from fuzzywuzzy import fuzz
 from string import ascii_lowercase
 from collections import defaultdict
 
-from src.KMPSearch import KMPSearch
+from src.test.KMPSearch import KMPSearch
 
 resume_skills = ["mssql 2005", "mssql 2008", "sql", "ms word", "visual recognition", "excel", "company analysis",
                  "vb web", "apache", "php", "big data", "html", "selenium 3.141.59", "linux", "machine learning", "css",

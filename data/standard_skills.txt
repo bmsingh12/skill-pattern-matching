@@ -4603,6 +4603,7 @@ JanusGraph
 JasDB
 Jaspersoft Business Intelligence Suite
 JASS
+Java
 JavaFX Script
 Javamin Composer
 JavaScript
@@ -9784,4 +9785,7 @@ Zylab ZyImage
 ZynAddSubFX
 ZYTO LSA Pro
 Apache Tika
-
+Amazon S3
+GraphQL
+Appium
+gul.js

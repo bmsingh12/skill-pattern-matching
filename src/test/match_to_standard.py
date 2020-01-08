@@ -80,19 +80,19 @@ class bcolors:
 # # print("a3: ", a3)
 # #
 
-from difflib import  SequenceMatcher
-
-node = "node"
-node_list = ['Hewlett-Packard HP Network Node Manager', 'Node JS']
-
-for n in node_list:
-    seq = SequenceMatcher(None, node, n)
-    print(list(seq.get_matching_blocks()))
-    print(seq.ratio())
-
-
-x = ["asd","weq"]
-print(list(enumerate(x,2019)))
-
-for z in x:
-    print(enumerate(z,2019))
+# from difflib import  SequenceMatcher
+#
+# node = "node"
+# node_list = ['Hewlett-Packard HP Network Node Manager', 'Node JS']
+#
+# for n in node_list:
+#     seq = SequenceMatcher(None, node, n)
+#     print(list(seq.get_matching_blocks()))
+#     print(seq.ratio())
+#
+#
+# x = ["asd","weq"]
+# print(list(enumerate(x,2019)))
+#
+# for z in x:
+#     print(enumerate(z,2019))
