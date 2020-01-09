@@ -8,7 +8,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>infotmt</user-name>
-      <introspection-schemas>@:@|nobilis_ent_dev:sandbox12,skill_testing</introspection-schemas>
+      <introspection-schemas>@:@|nobilis_ent_dev:nobilis_tenant_masterdb,sandbox12,skill_testing</introspection-schemas>
     </data-source>
   </component>
 </project>

@@ -17,6 +17,8 @@ cursor = connection.cursor()
 print("Table before updating records:")
 postgres_select_query = """ SELECT * FROM sandbox12.skill"""
 cursor.execute(postgres_select_query)
+
+# old skills data
 rec = cursor.fetchall()
 
 
@@ -78,35 +80,28 @@ lfs = ['Oracle Java', 'Java', 'Oracle Java 2 Platform Enterprise Edition J2EE', 
 dic = {}
 lis = []
 d_t = {}
+no_match_found_list = []
+
 
 for id, skill, type in rec:
     list_of_matching_skills = []
     tup = tuple()
     for skills_lookup in lookupFileSkills():
-        # print(skill)
-        if fuzz.token_set_ratio(skill, skills_lookup) >= 90:
+        if fuzz.token_set_ratio(skill, skills_lookup) >= 80:
             list_of_matching_skills.append(skills_lookup)
-            dic[skill] = list_of_matching_skills
-            lis.append(dic)
             tup = (id, skill, type)
             d_t[tup] = list_of_matching_skills
 
-# pprint.pprint(d_t)
 
 i = 1
 j = 1
 
 for k, v in d_t.items():
     print("\n")
-    # print(i, "\b.", bcolors.BOLD + k[0] + bcolors.ENDC, ":", v)
     print(i, "\b.", k, ":", v)
     i += 1
     seq_dict = {}
     for skill in v:
-        # if k[1] == skill.lower():
-        #     print(bcolors.OKGREEN + "Perfect Match: " + bcolors.ENDC, skill)
-        #     j += 1
-        # else:
         seq = SequenceMatcher(None, k[1].lower(), skill.lower())
         seq_dict[skill] = seq.ratio()
     None if seq_dict == {} else print(bcolors.FAIL + "Max Value" + bcolors.ENDC,

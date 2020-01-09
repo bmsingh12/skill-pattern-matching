@@ -1810,6 +1810,7 @@ ComChart EMR
 COMCON DataFriend
 Comdb2
 COMIT
+Composer
 Command Alkon COMMANDconcrete
 Command interpreters
 Command Systems ComServe
@@ -2255,7 +2256,7 @@ Data base reporting software
 Data conversion software
 Data definition language DDL
 Data dictionary software
-Data entry software
+Data Entry Software
 Data extraction software
 Data Frenzy
 Data input software
@@ -2715,7 +2716,6 @@ Ecotech WinCollect
 eCredit Enterprise
 ECT International Raceway Multi-Pack
 Eden Sales Manager
-EDExpress
 Edgecam
 Edgewell Trac
 Edible Software
@@ -2878,7 +2878,6 @@ Empirisoft MediaLab
 Employee performance management system
 Employee scheduling software
 Employee self-service software
-Empress
 EMR Experts Pediatric EMR
 EMRlogic Systems ENTERPRISE Visions
 EMT Applications CounselorMax
@@ -4658,7 +4657,6 @@ JobPack MES Scheduler
 John Deere Apex Farm Management
 John Hesselberth and Ron Roy GlazeMaster
 Johnson Controls Metasys
-Join Java
 Joint Prediction of Operons JPOP
 Joomla
 JOSS
@@ -4770,7 +4768,6 @@ Kodak Dental Systems Kodak PRACTICEWORKS Practice management software PMS
 Kodak Dental Systems Kodak SOFTDENT Practice management software PMS
 Kodu
 KOffice.org Kplato
-Kognitio
 Kohana
 Kojo
 KommandCore
@@ -5603,6 +5600,7 @@ Microsoft Office Live Meeting
 Microsoft Office Mobile
 Microsoft Office Outlook (Calendar)
 Microsoft Office SharePoint Server MOSS
+Microsoft Office Suite
 Microsoft Onfolio
 Microsoft operating system
 Microsoft Outlook
@@ -5620,9 +5618,11 @@ Microsoft SQL Server
 Microsoft SQL Server
 Microsoft SQL Server Integration Services SSIS
 Microsoft SQL Server Reporting Services SSRS
+Microsoft Sway
 Microsoft System Center
 Microsoft Systems Management Server
 Microsoft Team Foundation Server
+Microsoft Teams
 Microsoft Total Quality Control Management
 Microsoft transact-structural query language T-SQL
 Microsoft Virtual Server
@@ -6355,7 +6355,6 @@ Optitex 3D Suite
 Optiwave OptiBPM
 Optiwave OptiFDTD
 Optiwave OptiSPICE
-Oracle ADF
 Oracle Advanced Procurement
 Oracle Agile Product Lifecycle Management PLM
 Oracle Application Express APEX
@@ -6370,6 +6369,7 @@ Oracle Clinical
 Oracle Coherence
 Oracle Darwin
 Oracle Data Guard
+Oracle Database
 Oracle Data Integrator
 Oracle DBMS
 Oracle Designer
@@ -6448,7 +6448,7 @@ Oracle Universal Content Management
 Oracle Warehouse Builder
 Oracle WebLogic
 Oracle WebLogic Server
-Oralce Java Enterprise System
+Oracle Java Enterprise System
 OrangeHRM
 Orbitz Worldwide Orbitz for Agents
 Orbius
@@ -9788,4 +9788,27 @@ Apache Tika
 Amazon S3
 GraphQL
 Appium
-gul.js
+Gulp.js
+Apache
+iOS
+macOS
+watchOS
+Mac OS X
+Material-UI
+OpenProj
+Rally Software
+React Native
+Redux
+SCSS
+Sass
+Serverless Framework
+Share Point
+AWS Amplify
+AppSync
+Bitbucket
+Amazon Cognito
+Data Entry
+Tally.ERP
+Twilio
+VB.Net
+
